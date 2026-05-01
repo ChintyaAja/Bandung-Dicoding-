@@ -1,0 +1,116 @@
+* {
+ box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+h2, h3 {
+   color: #00a2c6;
+
+}
+
+
+footer {
+    padding: 20px;
+    color: white ;
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav ul {
+    background-color: #00a2c6; 
+    padding: 15px;
+    display: flex;         
+    list-style-type: none; 
+    margin: 0;
+
+    position: sticky;
+    top: 0;
+}
+
+nav li {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+nav a {
+    color: white !important; 
+    text-decoration: none;   
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #e0e0e0 !important;
+    text-decoration: underline;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+main{
+    padding:20px;
+
+    overflow:auto;
+
+}
+
+#content {
+    float:left;
+    width: 75%;
+}
+aside{
+    float: right;
+    width: 25%;
+
+    padding-left: 20px;
+}
+
+header {
+    display: inline ;
+
+}
+.profile header{
+    text-align: center;
+}
+
+.featured-image {
+    width:  100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile img { 
+    width: 200px;
+ }
+
+ .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.2);
+    border-radius: 5px;
+ }
+
+ .jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #00c8eb;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+ @media screen and (max-width: 1000px) {
+  #content, aside {
+    width: 100%;
+        padding: 0;
+  }
+}
